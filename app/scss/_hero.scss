@@ -1,0 +1,105 @@
+.hero {
+    max-width: 90rem;
+    
+    background: hsl(0, 0%, 98%); 
+    padding: 0 0 60px 0;
+
+    @media (min-width:640px) {
+        display: flex;
+        padding-left: 6rem;
+        padding-right: 0;
+        align-items: center;
+    }
+    
+    h1 {
+        @media (min-width: 640px) {
+            font-size: 3.25rem;
+        }
+        color: hsl(233, 26%, 24%);
+        font-size: 2.31rem;
+        font-weight: normal;
+        margin-bottom: 1.5rem;
+    
+    }
+
+    p {
+        @media (min-width: 640px) {
+            font-size: 1.25rem;
+        }
+        
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 2.25rem;
+
+    }
+
+    &_img {
+        @media (min-width:640px) {
+            flex: 3;
+            order: 2;
+            height: 32rem;
+
+            background: url('bg-intro-desktop.svg');  
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left center;  
+            background-size: 144%;
+        }
+
+        position:relative;
+        background: url('bg-intro-mobile.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        min-height: 17.5rem;
+
+        @media (min-width: 640px) and (max-width:1200px) { 
+            min-height: 14rem;
+        }
+
+        &::before {
+            @media (min-width: 640px) {
+                height: 126%;
+                width: 83%;
+                left: 17%;
+                background-size: cover;
+            }
+            @media (min-width: 640px) and (max-width:1200px) {
+                top: -25%;
+                left: 7%;
+                width: 93%;
+                background-size: contain;
+            }
+            
+            content:"";
+            height: 100%;
+            width: 100%;
+            position:absolute;
+            background: url('image-mockups.png');
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        
+        }
+
+    }
+    
+    &_text {
+        @media (min-width:640px) {
+            flex: 2;
+            text-align: left;
+        }
+
+        @media (min-width: 640px) and (max-width:1200px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        text-align: center;
+
+    }
+
+}

@@ -1,0 +1,145 @@
+.sekce {
+    @media (min-width: 640px) {
+        text-align: left;
+    }
+
+    .prvni-sekce {
+        text-align: center;
+        background: hsl(220, 16%, 96%);
+        padding: 60px 30px;
+
+        @media (min-width: 640px) {
+            padding: 6rem;
+            text-align: left;
+
+            .prvni p {
+            max-width: 50%;
+            margin-bottom: 30px;
+            }   
+    
+        }
+        
+        .why-to-choose {
+            @media (min-width: 640px) and (max-width:1200px) {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                text-align: center;
+
+                div {
+                    padding: 20px;
+                }
+
+            }
+            @media (min-width:1200px) {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                text-align: left;
+                gap: 10px;
+            }
+            
+            text-align:center;
+            flex-direction: column;
+
+            img {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .druha-sekce {
+        display: grid;
+        background: hsl(0, 0%, 98%);
+        padding: 60px 30px;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            padding: 4rem 6rem;
+            text-align: left;
+            
+            h2 {
+                    text-align: left;
+            }
+
+            .articles {
+
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+
+                    div {
+                        background: white;
+                        border-radius: 5px;
+                        box-shadow: 0 0 4px rgb(209, 209, 209);
+                    }
+
+                }
+            }   
+            @media (min-width: 640px) and (max-width: 1200px) {
+                padding: 4rem 6rem;
+                text-align: left;
+                
+                h2 {
+                        text-align: left;
+                }
+    
+                .articles {
+
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+    
+                        div {
+                            background: white;
+                            border-radius: 5px;
+                            box-shadow: 0 0 4px rgb(209, 209, 209);
+                        }
+    
+                    }
+                }     
+        .articles {
+            display: grid;
+            gap: 10px;
+        }   
+        .articles div {
+                background: white;
+                border-radius: 5px;
+                padding-bottom: 20px;
+                box-shadow: 0 0 4px rgb(209, 209, 209);
+                transition: all 150ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+            }
+            
+        img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        h2 {
+            
+            margin-bottom: 30px;
+        }
+
+        caption, h3, p {
+            padding: 0 20px;    
+        }
+                
+        p {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            padding-bottom: 20px;
+        } 
+        
+    }
+
+    h3:hover {
+        cursor:pointer;
+        color: hsl(136, 65%, 51%);
+    }
+
+    p.caption {
+        text-align: left;
+    }
+}

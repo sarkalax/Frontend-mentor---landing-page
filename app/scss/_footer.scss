@@ -1,0 +1,79 @@
+.footer {
+    padding: 40px 0;
+    background: hsl(233, 26%, 24%);
+    text-align: center;
+    flex-direction: column;
+
+    @media (min-width: 640px) {
+        flex-direction: row;
+        padding: 3rem;
+        justify-content: space-around;
+
+
+        .footer_links.hide-for-mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        .footer_links.hide-for-mobile .flex {
+            flex-direction: column;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .prvni {
+            text-align: left;
+
+        }
+        .treti {
+            text-align: right;
+        }
+
+        a img {
+            margin: 0;
+    
+        }
+    
+    }
+
+    a img {
+        margin-bottom: 30px;
+        height: 30px;
+    }
+
+    .ikony {
+        justify-content: center;
+
+        a {
+            margin: 0 10px;
+        }
+
+    }
+
+    .footer_links {
+        
+        flex-direction: column;
+        margin: 0 0 20px 0;
+
+        a {
+            font-size: 1rem;
+           color: white; 
+           padding: 10px 0;
+           text-shadow: none;
+        }
+        
+        a:hover {
+            color:hsl(136, 65%, 51%);
+        }
+    }
+
+    .button {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+
+}

@@ -46,12 +46,12 @@
             background-size: 144%;
         }
 
-        position:relative;
-        background: url('bg-intro-mobile.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        min-height: 17.5rem;
+            position: relative;
+            background: url(bg-intro-mobile.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 23.5rem;
 
         @media (min-width: 640px) and (max-width:1200px) { 
             min-height: 14rem;

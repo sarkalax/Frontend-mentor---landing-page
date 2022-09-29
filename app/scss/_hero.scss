@@ -46,13 +46,13 @@
             background-size: 144%;
         }
 
-            position: relative;
-            background: url(bg-intro-mobile.svg);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 23.5rem;
-
+        position: relative;
+        background: url('bg-intro-mobile.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 23.5rem;
+    
         @media (min-width: 640px) and (max-width:1200px) { 
             min-height: 14rem;
         }
@@ -65,7 +65,8 @@
                 background-size: cover;
             }
             @media (min-width: 640px) and (max-width:1200px) {
-                top: -25%;
+                height: 110%;
+                top: -9%;
                 left: 7%;
                 width: 93%;
                 background-size: contain;
@@ -82,10 +83,11 @@
         
         }
 
-    }
-    
+    }   
+
     &_text {
-         padding: 0 30px; 
+        padding: 0 30px; 
+        text-align: center;
 
         @media (min-width:640px) {
             flex: 2;
@@ -95,13 +97,13 @@
         }
 
         @media (min-width: 640px) and (max-width:1200px) {
+
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             p {
                 font-size: 1rem;
             }
         }
-        text-align: center;
-
+    }
 }
